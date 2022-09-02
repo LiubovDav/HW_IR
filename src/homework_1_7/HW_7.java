@@ -346,6 +346,36 @@ public class HW_7 extends CommonHW {
             System.out.println(oddArray[i]);
         }
 
+//        Распечатать все данные котов в коробках с четными индексами, используя двумерный массив.
+        printTaskNumber(22);
+
+
+
+        String[][] catsArray = new String[8][3];
+//        catsArray[0][0] = "Murzik";
+//        catsArray[0][1] = "2";
+//        catsArray[0][2] = "Grey";
+        catsArray[0] = new String[] {"Murzik", "2", "Gray"};
+        catsArray[1] = new String[] {"Chernish", "3", "Black"};
+        catsArray[2] = new String[] {"Murka", "4", "Gray"};
+        catsArray[3] = new String[] {"Vaska", "1", "Broun"};
+        catsArray[4] = new String[] {"Rizhik", "5", "Red"};
+        catsArray[5] = new String[] {"Dymka", "6", "Gray"};
+        catsArray[6] = new String[] {"Patrik", "9", "Red"};
+        catsArray[7] = new String[] {"Zorro", "10", "Gray"};
+
+        for (int i = 0; i < catsArray.length; i++) {
+            if (i % 2 == 0) {
+                System.out.println("Cat with the index " + i);
+                System.out.println("Name: " + catsArray[i][0]);
+                System.out.println("Age: " + catsArray[i][1]);
+                System.out.println("Color: " + catsArray[i][2]);
+            }
+        }
+
+
+
+
 
 
 
