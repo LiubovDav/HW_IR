@@ -1,4 +1,4 @@
-package homework;
+package homework_1_7;
 
 public class HW_6 extends CommonHW {
 
@@ -29,7 +29,7 @@ public class HW_6 extends CommonHW {
     // Распечатать последовательность чисел, кратных 7, в промежутке (327, 300)
 
     public static void printSequenceThreeHundred() {
-        for (int i = 326 ; i >= 300; i--) {
+        for (int i = 326; i >= 300; i--) {
             if (i % 7 == 0) {
                 System.out.println(i);
             }
@@ -157,7 +157,7 @@ public class HW_6 extends CommonHW {
     // в которых разница между первой цифрой (десятки) и второй цифрой (единицы) не превышает 3.
 
    // public static void printSequenceAllowedTwoDigitNumbers() {
-   //     for (int i = 10; i < ; i++) {
+   //     for (int i = 10; i < ...; i++) {
    //     }
    // }
 

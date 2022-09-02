@@ -1,4 +1,4 @@
-package homework;
+package homework_1_7;
 
 import java.util.Random;
 
@@ -16,6 +16,39 @@ public class HW_7 extends CommonHW {
         }
         int average = sum / array.length;
         System.out.println("среднee " + average);
+    }
+
+    // Создать метод, который принимает на вход массив int,  и возвращает минимальное значение,
+    // максимальное значение и среднее значение всех чисел массива.
+    // Проверить работу метода на массиве из задания 20.
+
+    public static int[] returnMinMaxAverage(int[] array) {
+
+        int minValue = Integer.MAX_VALUE;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] < minValue) {
+                minValue = array[i];
+            }
+        }
+        System.out.println("Min value = " + minValue);
+
+        int maxValue = Integer.MIN_VALUE;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] > maxValue) {
+                maxValue = array[i];
+            }
+        }
+        System.out.println("Max value = " + maxValue);
+
+        int summ = 0;
+        for (int i = 0; i < array.length; i++) {
+            summ = summ + array[i];
+        }
+
+        int average = summ / array.length;
+        System.out.println("Average = " + average);
+
+        return new int[] {minValue, maxValue, average};
     }
 
     public static void main(String[] args) {
@@ -43,6 +76,10 @@ public class HW_7 extends CommonHW {
         // Создать массив catsColors и заполнить его значениями.
 
         String[] catsColors = new String[] {"grey", "black", "grey", "red", "braun", "red", "blue"};
+        for (int i = 0; i < catsColors.length; i++) {
+            System.out.println(catsColors[i]);
+        }
+
 
         printTaskNumber(4);
 
@@ -155,11 +192,11 @@ public class HW_7 extends CommonHW {
         printTaskNumber(12);
         // Распечатать средний возраст котов из массива catsAges
 
-        int sum = 0;
+        double sum = 0;
         for (int i = 0; i < catsAges.length; i++) {
             sum = sum + catsAges[i];
         }
-        int averageAge = sum / catsAges.length;
+        double averageAge = sum / catsAges.length;
         System.out.println("средний возраст котов " + averageAge);
 
         printTaskNumber(13);
@@ -201,6 +238,7 @@ public class HW_7 extends CommonHW {
 
         printTaskNumber(16);
         // Распечатать имя кота, если кот находится в коробке с четным индексом и его возраст не больше 3 лет
+
 
         for (int i = 0; i < catsNames.length; i++) {
             if ((i + 1) % 2 == 0 && catsAges[i] <= 3) {
@@ -252,7 +290,6 @@ public class HW_7 extends CommonHW {
         Random random = new Random();
         for (int i = 0; i < arrayPlus.length; i++) {
             arrayPlus[i] = Math.abs(random.nextInt());
-
         }
 
         for (int i = 0; i < arrayPlus.length; i++) {
@@ -264,6 +301,54 @@ public class HW_7 extends CommonHW {
         // Создать метод, который принимает на вход массив int,  и возвращает минимальное значение,
         // максимальное значение и среднее значение всех чисел массива.
         // Проверить работу метода на массиве из задания 20.
+
+        int[] minMaxAverageArray = returnMinMaxAverage(arrayPlus);
+        System.out.println("-----------------------");
+        System.out.println("Min value = " + minMaxAverageArray[0]);
+        System.out.println("Max value = " + minMaxAverageArray[1]);
+        System.out.println("Avarage = " + minMaxAverageArray[2]);
+
+        printTaskNumber(22);
+
+        // Создать массив четных чисел и массив нечетных чисел из элементов массива из задания 20.
+
+        int evenLength = 0;
+        for (int i = 0; i < arrayPlus.length; i++) {
+            if (arrayPlus[i] % 2 == 0) {
+                evenLength++;
+            }
+        }
+
+        int[] evenArray = new int[evenLength];
+        int[] oddArray = new int[arrayPlus.length - evenLength];
+
+        int evenCount = 0;
+        int oddCount = 0;
+        for (int i = 0; i < arrayPlus.length; i++) {
+            if (arrayPlus[i] % 2 == 0) {
+                evenArray[evenCount] = arrayPlus[i];
+                evenCount++;
+            } else {
+                oddArray[oddCount] = arrayPlus[i];
+                oddCount++;
+            }
+        }
+
+        System.out.println("Even array:");
+        for (int i = 0; i < evenArray.length; i++) {
+            System.out.println(evenArray[i]);
+        }
+
+        System.out.println("--------------------");
+
+        System.out.println("Odd array:");
+        for (int i = 0; i < oddArray.length; i++) {
+            System.out.println(oddArray[i]);
+        }
+
+
+
+
 
 
 
