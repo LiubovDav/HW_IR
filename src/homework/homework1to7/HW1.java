@@ -1,6 +1,6 @@
-package homework_1_7;
+package homework.homework1to7;
 
-public class HW_1 {
+public class HW1 {
     int a = 10;
     int b = 20;
     int s = 100;

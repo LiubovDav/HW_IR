@@ -1,6 +1,6 @@
-package homework_1_7;
+package homework.homework1to7;
 
-public class HW_4 {
+public class HW4 {
 
     private static int taskNumber = 1;
 

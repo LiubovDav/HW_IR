@@ -1,6 +1,8 @@
-package homework_1_7;
+package homework.homework1to7;
 
-public class HW_6 extends CommonHW {
+import static utils.Utils.*;
+
+public class HW6 {
 
     // Распечатать последовательность чисел от 0 до 9 включительно.
 

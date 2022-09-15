@@ -1,6 +1,8 @@
-package homework_1_7;
+package homework.homework1to7;
 
-public class HW_5 extends CommonHW {
+import static utils.Utils.*;
+
+public class HW5 {
 
 
     public static void printUnderTaskNumber(int a){

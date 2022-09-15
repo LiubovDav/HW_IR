@@ -1,8 +1,10 @@
-package homework_1_7;
+package homework.homework1to7;
 
 import java.util.Random;
 
-public class HW_7 extends CommonHW {
+import static utils.Utils.*;
+
+public class HW7 {
 
 
     // Написать метод, который принимает на вход массив int,
@@ -303,7 +305,7 @@ public class HW_7 extends CommonHW {
         // Проверить работу метода на массиве из задания 20.
 
         int[] minMaxAverageArray = returnMinMaxAverage(arrayPlus);
-        System.out.println("-----------------------");
+        System.out.println("\u001B[36m" + "-----------------------" + "\u001B[0m");
         System.out.println("Min value = " + minMaxAverageArray[0]);
         System.out.println("Max value = " + minMaxAverageArray[1]);
         System.out.println("Avarage = " + minMaxAverageArray[2]);
@@ -334,14 +336,14 @@ public class HW_7 extends CommonHW {
             }
         }
 
-        System.out.println("Even array:");
+        System.out.println("\u001B[36m" + "Even array:" + "\u001B[0m");
         for (int i = 0; i < evenArray.length; i++) {
             System.out.println(evenArray[i]);
         }
 
-        System.out.println("--------------------");
+        System.out.println("\u001B[32m" + "--------------------" + "\u001B[0m");
 
-        System.out.println("Odd array:");
+        System.out.println("\u001B[31m" + "Odd array:" + "\u001B[0m");
         for (int i = 0; i < oddArray.length; i++) {
             System.out.println(oddArray[i]);
         }
@@ -366,12 +368,74 @@ public class HW_7 extends CommonHW {
 
         for (int i = 0; i < catsArray.length; i++) {
             if (i % 2 == 0) {
-                System.out.println("Cat with the index " + i);
-                System.out.println("Name: " + catsArray[i][0]);
-                System.out.println("Age: " + catsArray[i][1]);
-                System.out.println("Color: " + catsArray[i][2]);
+                System.out.println("\u001B[33m" + "Cat with the index " + i + "\u001B[0m");
+                System.out.println("\u001B[32m" + "Name: " + catsArray[i][0] + "\u001B[0m");
+                System.out.println("\u001B[35m" + "Age: " + catsArray[i][1] + "\u001B[0m");
+                System.out.println("\u001B[31m" + "Color: " + catsArray[i][2] + "\u001B[0m");
             }
         }
+
+        printTaskNumber(23);
+
+//        Создать двумерный массив целых случайных чисел от 1 до 10 размерности 4*8.
+
+        int[][] wholeRandomArray = new int[4][8];
+        for (int i = 0; i < wholeRandomArray.length; i++) {
+            for (int j = 0; j < wholeRandomArray[i].length; j++) {
+
+            }
+        }
+
+//        wholeRandomArray[0] - тут хранится массив int[8]
+//        wholeRandomArray[1] - тут хранится массив int[8]
+//        wholeRandomArray[2] - тут хранится массив int[8]
+//        wholeRandomArray[3] - тут хранится массив int[8]
+
+//        чтобы обратиться к нулевому элементу массива wholeRandomArray[0] пишем так wholeRandomArray[0][0]
+//        чтобы обратиться к первому элементу массива wholeRandomArray[0] пишем так wholeRandomArray[0][1]
+//        чтобы обратиться к второму элементу массива wholeRandomArray[0] пишем так wholeRandomArray[0][2]
+//        чтобы обратиться к третьему элементу массива wholeRandomArray[0] пишем так wholeRandomArray[0][3]
+//        чтобы обратиться к четвертому элементу массива wholeRandomArray[0] пишем так wholeRandomArray[0][4]
+//        чтобы обратиться к пятому элементу массива wholeRandomArray[0] пишем так wholeRandomArray[0][5]
+//        чтобы обратиться к шестому элементу массива wholeRandomArray[0] пишем так wholeRandomArray[0][6]
+//        чтобы обратиться к седьмому элементу массива wholeRandomArray[0] пишем так wholeRandomArray[0][7]
+
+//        чтобы обратиться к нулевому элементу массива wholeRandomArray[1] пишем так wholeRandomArray[1][0]
+//        чтобы обратиться к первому элементу массива wholeRandomArray[1] пишем так wholeRandomArray[1][1]
+//        чтобы обратиться к второму элементу массива wholeRandomArray[1] пишем так wholeRandomArray[1][2]
+//        чтобы обратиться к третьему элементу массива wholeRandomArray[1] пишем так wholeRandomArray[1][3]
+//        чтобы обратиться к четвертому элементу массива wholeRandomArray[1] пишем так wholeRandomArray[1][4]
+//        чтобы обратиться к пятому элементу массива wholeRandomArray[1] пишем так wholeRandomArray[1][5]
+//        чтобы обратиться к шестому элементу массива wholeRandomArray[1] пишем так wholeRandomArray[1][6]
+//        чтобы обратиться к седьмому элементу массива wholeRandomArray[1] пишем так wholeRandomArray[1][7]
+
+//        чтобы обратиться к нулевому элементу массива wholeRandomArray[2] пишем так wholeRandomArray[2][0]
+//        чтобы обратиться к первому элементу массива wholeRandomArray[2] пишем так wholeRandomArray[2][1]
+//        чтобы обратиться к второму элементу массива wholeRandomArray[2] пишем так wholeRandomArray[2][2]
+//        чтобы обратиться к третьему элементу массива wholeRandomArray[2] пишем так wholeRandomArray[2][3]
+//        чтобы обратиться к четвертому элементу массива wholeRandomArray[2] пишем так wholeRandomArray[2][4]
+//        чтобы обратиться к пятому элементу массива wholeRandomArray[2] пишем так wholeRandomArray[2][5]
+//        чтобы обратиться к шестому элементу массива wholeRandomArray[2] пишем так wholeRandomArray[2][6]
+//        чтобы обратиться к седьмому элементу массива wholeRandomArray[2] пишем так wholeRandomArray[2][7]
+
+//        чтобы обратиться к нулевому элементу массива wholeRandomArray[3] пишем так wholeRandomArray[3][0]
+//        чтобы обратиться к первому элементу массива wholeRandomArray[3] пишем так wholeRandomArray[3][1]
+//        чтобы обратиться к второму элементу массива wholeRandomArray[3] пишем так wholeRandomArray[3][2]
+//        чтобы обратиться к третьему элементу массива wholeRandomArray[3] пишем так wholeRandomArray[3][3]
+//        чтобы обратиться к четвертому элементу массива wholeRandomArray[3] пишем так wholeRandomArray[3][4]
+//        чтобы обратиться к пятому элементу массива wholeRandomArray[3] пишем так wholeRandomArray[3][5]
+//        чтобы обратиться к шестому элементу массива wholeRandomArray[3] пишем так wholeRandomArray[3][6]
+//        чтобы обратиться к седьмому элементу массива wholeRandomArray[3] пишем так wholeRandomArray[3][7]
+
+
+
+
+
+
+
+
+
+
 
 
 
